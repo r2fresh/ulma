@@ -1,0 +1,22 @@
+{
+  "name": "ulma",
+  "version": "1.0.0",
+  "description": "집 값의 히스토리를 알수 있는 웹",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r2fresh/ulma.git"
+  },
+  "author": "r2fresh78@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r2fresh/ulma/issues"
+  },
+  "homepage": "https://github.com/r2fresh/ulma#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
