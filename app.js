@@ -8,6 +8,8 @@ var querystring = require('querystring')
 
 //app.set('views', path.join(__dirname, 'views'));
 
+app.set('port', (process.env.PORT || 5000));
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -100,4 +102,4 @@ app.post('/test', function(req, res) {
 
 app.use(express.static('public'));
 
-app.listen(3000);
+app.listen(app.get('port'));
