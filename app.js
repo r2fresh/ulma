@@ -19,7 +19,7 @@ app.get('/',function(req, res){
 
 app.post('/test', function(req, res) {
 
-    console.log('call test')
+    console.log(req.body)
 
     // // An object of options to indicate where to post to
     //  var post_options = {
@@ -52,15 +52,17 @@ app.post('/test', function(req, res) {
 
     var returnData;
 
-    var postData = querystring.stringify({
-        menuGubun:'A',
-        srhType:'TOT',
-        houseType:1,
-        srhYear:2015,
-        srhPeriod:1,
-        gubunCode:'LAND',
-        sidoCode:11,
-    })
+    // var postData = querystring.stringify({
+    //     menuGubun:'A',
+    //     srhType:'TOT',
+    //     houseType:1,
+    //     srhYear:2015,
+    //     srhPeriod:1,
+    //     gubunCode:'LAND',
+    //     sidoCode:11,
+    // })
+
+    var postData = querystring.stringify(req.body)
 
     var options = {
         host: 'rt.molit.go.kr',

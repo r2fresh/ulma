@@ -9,7 +9,7 @@ $(function(){
         srhYear:2015,
         srhPeriod:1,
         gubunCode:'LAND',
-        sidoCode:11,
+        sidoCode:26,
     }
 
     $.ajax({
