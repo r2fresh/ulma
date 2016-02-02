@@ -44,7 +44,10 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	document.write("It works. ")
+	
+	//require('!style!css!./public/css/style.css');
+	//require('../css/style.css');
+	document.write('It works. ')
 	document.write(__webpack_require__(1));
 
 
