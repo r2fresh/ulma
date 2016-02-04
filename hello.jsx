@@ -1,9 +1,10 @@
 import React from 'react';
 
 class Hello extends React.Component {
+
     render() {
         return <h1>Hello</h1>
     }
 }
 
-React.render(<hello/>, document.getElementById('hello'))
+export default Hello
